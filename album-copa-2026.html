@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Álbum 2026">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMDAzMDg3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMDAxYTRkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzAwQTY1MSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZFNTY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0NDOTkwMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2hpbmUiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmZmZmZmO3N0b3Atb3BhY2l0eTowLjE1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZmZmZjtzdG9wLW9wYWNpdHk6MCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNoYWRvdyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjgiIGZsb29kLWNvbG9yPSIjMDAwMDAwIiBmbG9vZC1vcGFjaXR5PSIwLjQiLz4KICAgIDwvZmlsdGVyPgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVNZXJnZT48ZmVNZXJnZU5vZGUgaW49ImJsdXIiLz48ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz48L2ZlTWVyZ2U+CiAgICA8L2ZpbHRlcj4KICAgIDxjbGlwUGF0aCBpZD0icm91bmQiPgogICAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgcnk9IjExMiIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgcnk9IjExMiIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSBEaWFnb25hbCBhY2NlbnQgLS0+CiAgPHBvbHlnb24gcG9pbnRzPSIwLDUxMiA1MTIsMTgwIDUxMiw1MTIiIGZpbGw9IiMwMEE2NTEiIG9wYWNpdHk9IjAuMjUiLz4KICA8cG9seWdvbiBwb2ludHM9IjAsNTEyIDUxMiwyODAgNTEyLDUxMiIgZmlsbD0iIzAwMzA4NyIgb3BhY2l0eT0iMC4yIi8+CgogIDwhLS0gU2hpbmUgb3ZlcmxheSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgcnk9IjExMiIgZmlsbD0idXJsKCNzaGluZSkiLz4KCiAgPCEtLSBUcm9waHkgYm9keSAtLT4KICA8ZyBmaWx0ZXI9InVybCgjc2hhZG93KSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU2LDIzMCkiPgogICAgPCEtLSBDdXAgYm93bCAtLT4KICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTgyIiByeD0iNzIiIHJ5PSIxOCIgZmlsbD0idXJsKCNnb2xkKSIgb3BhY2l0eT0iMC45Ii8+CiAgICA8cGF0aCBkPSJNLTcyLC04MiBRLTgwLC0yMCAtNDgsMzAgUS0yNCw2MCAwLDY1IFEyNCw2MCA0OCwzMCBRODAsLTIwIDcyLC04MiBaIiBmaWxsPSJ1cmwoI2dvbGQpIi8+CgogICAgPCEtLSBIYW5kbGVzIC0tPgogICAgPHBhdGggZD0iTS03MiwtNzAgUS0xMTAsLTcwIC0xMTAsLTQwIFEtMTEwLC0xMCAtNzIsLTIwIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjZ29sZCkiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPHBhdGggZD0iTTcyLC03MCBRMTEwLC03MCAxMTAsLTQwIFExMTAsLTEwIDcyLC0yMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgICA8IS0tIFN0ZW0gLS0+CiAgICA8cmVjdCB4PSItMTQiIHk9IjY1IiB3aWR0aD0iMjgiIGhlaWdodD0iNDgiIHJ4PSI2IiBmaWxsPSJ1cmwoI2dvbGQpIi8+CgogICAgPCEtLSBCYXNlIHBsYXRlIC0tPgogICAgPHJlY3QgeD0iLTU0IiB5PSIxMDgiIHdpZHRoPSIxMDgiIGhlaWdodD0iMTgiIHJ4PSI5IiBmaWxsPSJ1cmwoI2dvbGQpIi8+CiAgICA8cmVjdCB4PSItNDQiIHk9IjEyMiIgd2lkdGg9Ijg4IiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI0NDOTkwMCIvPgoKICAgIDwhLS0gU3RhciBpbnNpZGUgY3VwIC0tPgogICAgPHRleHQgeD0iMCIgeT0iLTI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjUyIiBmaWxsPSIjRkZGOUM0IiBvcGFjaXR5PSIwLjkiPuKYhTwvdGV4dD4KICA8L2c+CgogIDwhLS0gQm90dG9tIHRleHQ6IDIwMjYgLS0+CiAgPHRleHQgeD0iMjU2IiB5PSI0MzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgJ0ltcGFjdCcsIHNhbnMtc2VyaWYiCiAgICBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iOTAwIgogICAgZmlsbD0idXJsKCNnb2xkKSIgbGV0dGVyLXNwYWNpbmc9IjYiCiAgICBmaWx0ZXI9InVybCgjc2hhZG93KSI+MjAyNjwvdGV4dD4KCiAgPCEtLSBUb3AgbGFiZWwgLS0+CiAgPHRleHQgeD0iMjU2IiB5PSI4OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCAnSW1wYWN0Jywgc2Fucy1zZXJpZiIKICAgIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI5MDAiIGxldHRlci1zcGFjaW5nPSI0IgogICAgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOSI+w4FMQlVNPC90ZXh0PgoKICA8IS0tIFNtYWxsIGZvb3RiYWxsIGF0IGJvdHRvbSByaWdodCAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MTAsMzkwKSIgb3BhY2l0eT0iMC42Ij4KICAgIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNSIvPgogICAgPHRleHQgeD0iMCIgeT0iMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMzIiPuKavTwvdGV4dD4KICA8L2c+CgogIDwhLS0gQm9yZGVyIHJpbmcgLS0+CiAgPHJlY3QgeD0iNiIgeT0iNiIgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiIHJ4PSIxMDgiIHJ5PSIxMDgiCiAgICBmaWxsPSJub25lIiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo=">
+<title>🏆 Álbum Copa 2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+  :root{--verde:#00A651;--verde-escuro:#007A3D;--amarelo:#FFD700;--bg:#0a0f1e;--card:#111827;--card2:#1a2236;--texto:#e8eaf6;--muted:#6b7280;--borda:#1f2d4a;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--texto);font-family:'Inter',sans-serif;min-height:100vh;}
+  header{background:linear-gradient(135deg,#003087 0%,#001a4d 60%,#00A651 100%);padding:20px 16px 16px;text-align:center;position:relative;overflow:hidden;}
+  header::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+  header h1{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:3px;color:#fff;position:relative;}
+  header p{font-size:.75rem;color:rgba(255,255,255,.6);margin-top:2px;position:relative;}
+  .global-bar-wrap{background:var(--card);padding:20px 16px;border-bottom:1px solid var(--borda);}
+  .global-numbers{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:10px;}
+  .global-numbers .big{font-family:'Bebas Neue',sans-serif;font-size:3rem;line-height:1;color:var(--amarelo);}
+  .global-numbers .label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+  .global-numbers .right{text-align:right;}
+  .global-numbers .count{font-size:.95rem;font-weight:600;}
+  .progress-track{background:#1f2d4a;border-radius:6px;height:12px;overflow:hidden;}
+  .progress-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--verde) 0%,var(--amarelo) 100%);transition:width .4s ease;}
+  .tabs{display:flex;background:var(--card);border-bottom:1px solid var(--borda);overflow-x:auto;scrollbar-width:none;}
+  .tabs::-webkit-scrollbar{display:none;}
+  .tab-btn{flex:none;padding:10px 16px;font-size:.8rem;font-weight:600;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;transition:all .2s;text-transform:uppercase;letter-spacing:.5px;}
+  .tab-btn.active{color:var(--amarelo);border-bottom-color:var(--amarelo);}
+  .content{padding:12px 12px 80px;}
+  .group-block{margin-bottom:16px;}
+  .group-label{display:flex;align-items:center;gap:10px;padding:8px 12px;background:linear-gradient(90deg,rgba(0,48,135,.6),transparent);border-left:3px solid var(--amarelo);border-radius:0 6px 6px 0;margin-bottom:8px;}
+  .group-letter{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--amarelo);line-height:1;min-width:22px;}
+  .group-title{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+  .group-pct{margin-left:auto;font-family:'Bebas Neue',sans-serif;font-size:1rem;color:rgba(255,215,0,.6);}
+  .section-card{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:14px;margin-bottom:8px;}
+  .section-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;}
+  .section-flag{font-size:1.4rem;line-height:1;}
+  .section-name{font-weight:700;font-size:.9rem;flex:1;}
+  .section-pct{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--amarelo);min-width:48px;text-align:right;}
+  .section-mini-bar{background:#1f2d4a;border-radius:4px;height:5px;overflow:hidden;margin-bottom:10px;}
+  .section-mini-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--verde),var(--amarelo));transition:width .3s;}
+  .stickers-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+  .sticker{aspect-ratio:2/3;border-radius:8px;border:1.5px solid var(--borda);background:var(--bg);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:6px 4px 5px;-webkit-tap-highlight-color:transparent;transition:all .15s;}
+  .sticker:active{transform:scale(.92);}
+  .sticker.colada{background:rgba(0,166,81,.15);border-color:var(--verde);}
+  .sticker.repetida{background:rgba(255,215,0,.12);border-color:var(--amarelo);}
+  .sticker .topo{display:flex;flex-direction:column;align-items:center;gap:2px;flex:1;justify-content:center;}
+  .sticker .num{font-size:.58rem;color:var(--muted);font-weight:700;}
+  .sticker .nome{font-size:.6rem;color:var(--texto);text-align:center;line-height:1.3;word-break:break-word;padding:0 2px;}
+  .sticker.colada .nome{color:rgba(0,200,100,.95);}
+  .sticker.repetida .nome{color:rgba(255,215,0,.9);}
+  .sticker .icon{font-size:1.3rem;line-height:1;margin-top:2px;}
+  .sticker.colada .icon::after{content:"✅";}
+  .sticker:not(.colada):not(.repetida) .icon::after{content:"⬜";}
+  .sticker.repetida .icon::after{content:"🔁";}
+  .legend{display:flex;gap:10px;padding:10px 12px;background:var(--card);border-bottom:1px solid var(--borda);font-size:.7rem;color:var(--muted);flex-wrap:wrap;}
+  .legend span{display:flex;align-items:center;gap:4px;}
+  .missing-section{margin-bottom:14px;}
+  .missing-title{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:6px;padding-left:4px;}
+  .missing-chips{display:flex;flex-wrap:wrap;gap:5px;}
+  .chip{background:var(--card2);border:1px solid var(--borda);border-radius:20px;padding:3px 8px;font-size:.68rem;color:var(--texto);}
+  .copy-btn{width:100%;padding:12px;background:var(--verde-escuro);color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer;margin-top:16px;}
+  .copy-btn:active{background:var(--verde);}
+  .reset-btn{display:block;width:100%;padding:12px;background:transparent;color:#ef4444;border:1px solid #ef4444;border-radius:8px;font-size:.82rem;font-weight:600;cursor:pointer;margin-top:10px;}
+  .hidden{display:none!important;}
+  .special-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+  .special-sticker{background:linear-gradient(135deg,#1a2236,#111827);border:1.5px solid var(--amarelo);border-radius:8px;padding:8px 4px;cursor:pointer;text-align:center;transition:all .15s;-webkit-tap-highlight-color:transparent;}
+  .special-sticker:active{transform:scale(.92);}
+  .special-sticker.colada{background:linear-gradient(135deg,rgba(0,166,81,.2),rgba(0,166,81,.1));border-color:var(--verde);}
+  .special-sticker .s-num{font-family:'Bebas Neue',sans-serif;font-size:.8rem;color:var(--amarelo);}
+  .special-sticker.colada .s-num{color:var(--verde);}
+  .special-sticker .s-nome{font-size:.55rem;color:var(--muted);margin-top:2px;line-height:1.3;}
+  .special-sticker .s-icon{font-size:1.2rem;margin:4px 0;}
+
+  /* === SCAN IA === */
+  .scan-card{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:16px;margin-bottom:12px;}
+  .scan-card h3{font-size:.9rem;font-weight:700;margin-bottom:4px;}
+  .scan-card p{font-size:.75rem;color:var(--muted);margin-bottom:12px;line-height:1.5;}
+  .scan-select{width:100%;padding:10px 12px;background:var(--card2);color:var(--texto);border:1px solid var(--borda);border-radius:8px;font-size:.85rem;margin-bottom:10px;appearance:none;}
+  .scan-upload-area{border:2px dashed var(--borda);border-radius:10px;padding:24px 16px;text-align:center;cursor:pointer;transition:border-color .2s;margin-bottom:10px;position:relative;}
+  .scan-upload-area:hover,.scan-upload-area.drag{border-color:var(--amarelo);}
+  .scan-upload-area input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
+  .scan-upload-area .icon{font-size:2rem;margin-bottom:6px;}
+  .scan-upload-area p{font-size:.78rem;color:var(--muted);margin:0;}
+  .scan-preview{width:100%;border-radius:8px;margin-bottom:10px;max-height:220px;object-fit:cover;display:none;}
+  .scan-btn{width:100%;padding:12px;background:linear-gradient(90deg,#003087,#00A651);color:#fff;border:none;border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;letter-spacing:.5px;transition:opacity .2s;}
+  .scan-btn:disabled{opacity:.5;cursor:not-allowed;}
+  .scan-status{margin-top:12px;padding:12px;background:var(--card2);border-radius:8px;font-size:.8rem;line-height:1.6;display:none;}
+  .scan-status.loading{display:block;color:var(--amarelo);}
+  .scan-status.done{display:block;color:var(--verde);}
+  .scan-status.erro{display:block;color:#ef4444;}
+  .scan-resultado{margin-top:10px;}
+  .scan-resultado .linha{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--borda);font-size:.78rem;}
+  .scan-resultado .linha:last-child{border:none;}
+  .scan-aplica-btn{width:100%;padding:11px;background:var(--verde-escuro);color:#fff;border:none;border-radius:8px;font-size:.85rem;font-weight:700;cursor:pointer;margin-top:12px;display:none;}
+  .scan-aplica-btn:active{background:var(--verde);}
+  .badge-col{background:rgba(0,166,81,.2);color:var(--verde);border-radius:4px;padding:1px 6px;font-size:.68rem;font-weight:700;}
+  .badge-falt{background:rgba(107,114,128,.15);color:var(--muted);border-radius:4px;padding:1px 6px;font-size:.68rem;}
+</style>
+</head>
+<body>
+<div id="splash" style="position:fixed;inset:0;background:linear-gradient(135deg,#003087 0%,#001a4d 60%,#00A651 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .6s ease">
+  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMDAzMDg3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMDAxYTRkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzAwQTY1MSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ29sZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRkZFNTY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0NDOTkwMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2hpbmUiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmZmZmZmO3N0b3Atb3BhY2l0eTowLjE1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZmZmZjtzdG9wLW9wYWNpdHk6MCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNoYWRvdyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjgiIGZsb29kLWNvbG9yPSIjMDAwMDAwIiBmbG9vZC1vcGFjaXR5PSIwLjQiLz4KICAgIDwvZmlsdGVyPgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVNZXJnZT48ZmVNZXJnZU5vZGUgaW49ImJsdXIiLz48ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz48L2ZlTWVyZ2U+CiAgICA8L2ZpbHRlcj4KICAgIDxjbGlwUGF0aCBpZD0icm91bmQiPgogICAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgcnk9IjExMiIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgcnk9IjExMiIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSBEaWFnb25hbCBhY2NlbnQgLS0+CiAgPHBvbHlnb24gcG9pbnRzPSIwLDUxMiA1MTIsMTgwIDUxMiw1MTIiIGZpbGw9IiMwMEE2NTEiIG9wYWNpdHk9IjAuMjUiLz4KICA8cG9seWdvbiBwb2ludHM9IjAsNTEyIDUxMiwyODAgNTEyLDUxMiIgZmlsbD0iIzAwMzA4NyIgb3BhY2l0eT0iMC4yIi8+CgogIDwhLS0gU2hpbmUgb3ZlcmxheSAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgcnk9IjExMiIgZmlsbD0idXJsKCNzaGluZSkiLz4KCiAgPCEtLSBUcm9waHkgYm9keSAtLT4KICA8ZyBmaWx0ZXI9InVybCgjc2hhZG93KSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU2LDIzMCkiPgogICAgPCEtLSBDdXAgYm93bCAtLT4KICAgIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTgyIiByeD0iNzIiIHJ5PSIxOCIgZmlsbD0idXJsKCNnb2xkKSIgb3BhY2l0eT0iMC45Ii8+CiAgICA8cGF0aCBkPSJNLTcyLC04MiBRLTgwLC0yMCAtNDgsMzAgUS0yNCw2MCAwLDY1IFEyNCw2MCA0OCwzMCBRODAsLTIwIDcyLC04MiBaIiBmaWxsPSJ1cmwoI2dvbGQpIi8+CgogICAgPCEtLSBIYW5kbGVzIC0tPgogICAgPHBhdGggZD0iTS03MiwtNzAgUS0xMTAsLTcwIC0xMTAsLTQwIFEtMTEwLC0xMCAtNzIsLTIwIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjZ29sZCkiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPHBhdGggZD0iTTcyLC03MCBRMTEwLC03MCAxMTAsLTQwIFExMTAsLTEwIDcyLC0yMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgICA8IS0tIFN0ZW0gLS0+CiAgICA8cmVjdCB4PSItMTQiIHk9IjY1IiB3aWR0aD0iMjgiIGhlaWdodD0iNDgiIHJ4PSI2IiBmaWxsPSJ1cmwoI2dvbGQpIi8+CgogICAgPCEtLSBCYXNlIHBsYXRlIC0tPgogICAgPHJlY3QgeD0iLTU0IiB5PSIxMDgiIHdpZHRoPSIxMDgiIGhlaWdodD0iMTgiIHJ4PSI5IiBmaWxsPSJ1cmwoI2dvbGQpIi8+CiAgICA8cmVjdCB4PSItNDQiIHk9IjEyMiIgd2lkdGg9Ijg4IiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iI0NDOTkwMCIvPgoKICAgIDwhLS0gU3RhciBpbnNpZGUgY3VwIC0tPgogICAgPHRleHQgeD0iMCIgeT0iLTI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjUyIiBmaWxsPSIjRkZGOUM0IiBvcGFjaXR5PSIwLjkiPuKYhTwvdGV4dD4KICA8L2c+CgogIDwhLS0gQm90dG9tIHRleHQ6IDIwMjYgLS0+CiAgPHRleHQgeD0iMjU2IiB5PSI0MzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJywgJ0ltcGFjdCcsIHNhbnMtc2VyaWYiCiAgICBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iOTAwIgogICAgZmlsbD0idXJsKCNnb2xkKSIgbGV0dGVyLXNwYWNpbmc9IjYiCiAgICBmaWx0ZXI9InVybCgjc2hhZG93KSI+MjAyNjwvdGV4dD4KCiAgPCEtLSBUb3AgbGFiZWwgLS0+CiAgPHRleHQgeD0iMjU2IiB5PSI4OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snLCAnSW1wYWN0Jywgc2Fucy1zZXJpZiIKICAgIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI5MDAiIGxldHRlci1zcGFjaW5nPSI0IgogICAgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOSI+w4FMQlVNPC90ZXh0PgoKICA8IS0tIFNtYWxsIGZvb3RiYWxsIGF0IGJvdHRvbSByaWdodCAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MTAsMzkwKSIgb3BhY2l0eT0iMC42Ij4KICAgIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyOCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC4xNSIvPgogICAgPHRleHQgeD0iMCIgeT0iMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMzIiPuKavTwvdGV4dD4KICA8L2c+CgogIDwhLS0gQm9yZGVyIHJpbmcgLS0+CiAgPHJlY3QgeD0iNiIgeT0iNiIgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiIHJ4PSIxMDgiIHJ5PSIxMDgiCiAgICBmaWxsPSJub25lIiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo=" style="width:140px;height:140px;border-radius:32px;box-shadow:0 8px 32px rgba(0,0,0,.5);margin-bottom:28px">
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:4px;color:#fff">ÁLBUM COPA</div>
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:6px;color:#FFD700;margin-top:-4px">2026</div>
+  <div style="margin-top:32px;display:flex;gap:8px">
+    <div style="width:8px;height:8px;border-radius:50%;background:#FFD700;animation:pulse 1.2s ease-in-out infinite"></div>
+    <div style="width:8px;height:8px;border-radius:50%;background:#FFD700;animation:pulse 1.2s ease-in-out .3s infinite"></div>
+    <div style="width:8px;height:8px;border-radius:50%;background:#FFD700;animation:pulse 1.2s ease-in-out .6s infinite"></div>
+  </div>
+</div>
+<style>
+@keyframes pulse{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+</style>
+<script>
+window.addEventListener('load',()=>{setTimeout(()=>{const s=document.getElementById('splash');s.style.opacity='0';setTimeout(()=>s.remove(),600);},900);});
+</script>
+<header>
+  <h1>🏆 ÁLBUM COPA 2026</h1>
+  <p>Panini FIFA World Cup 2026™ • 980 figurinhas</p>
+</header>
+<div class="global-bar-wrap">
+  <div class="global-numbers">
+    <div><div class="label">Completo</div><div class="big" id="pct-global">0%</div></div>
+    <div class="right">
+      <div class="label">Coladas</div><div class="count" id="count-coladas">0 / 980</div>
+      <div class="label" style="margin-top:4px">Repetidas</div><div class="count" id="count-repetidas" style="color:var(--amarelo)">0</div>
+    </div>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="bar-global" style="width:0%"></div></div>
+</div>
+<div class="tabs">
+  <button class="tab-btn active" onclick="showTab('selecoes')">⚽ Grupos</button>
+  <button class="tab-btn" onclick="showTab('especiais')">⭐ Especiais</button>
+  <button class="tab-btn" onclick="showTab('scan')">📷 Scan IA</button>
+  <button class="tab-btn" onclick="showTab('faltantes')">📋 Faltantes</button>
+  <button class="tab-btn" onclick="showTab('opcoes')">⚙️ Opções</button>
+</div>
+<div class="legend">
+  <span>✅ Colada</span><span>🔁 Repetida</span><span>⬜ Falta</span>
+  <span style="font-style:italic;color:rgba(107,114,128,.6)">1x=colada · 2x=repetida · 3x=falta</span>
+</div>
+<div id="tab-selecoes" class="content"></div>
+<div id="tab-especiais" class="content hidden"></div>
+<div id="tab-scan" class="content hidden">
+  <div class="scan-card">
+    <h3>📷 Importar via Claude IA</h3>
+    <p>Como funciona: envie a foto do seu álbum aqui no chat do Claude e peça para analisar. O Claude devolve um código JSON que você cola aqui para atualizar automaticamente.</p>
+
+    <div style="background:var(--card2);border-radius:10px;padding:14px;margin-bottom:14px;border-left:3px solid var(--amarelo)">
+      <div style="font-size:.72rem;font-weight:700;color:var(--amarelo);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">Passo a passo</div>
+      <div style="font-size:.75rem;color:var(--texto);line-height:2">
+        <div>1️⃣ Tire uma foto clara da página da seleção</div>
+        <div>2️⃣ Mande a foto no chat e escreva:<br>
+          <span style="font-family:monospace;background:#0a0f1e;padding:3px 8px;border-radius:4px;font-size:.7rem;display:inline-block;margin-top:2px">"Analisa quais figurinhas estão coladas"</span>
+        </div>
+        <div>3️⃣ O Claude responde com um JSON</div>
+        <div>4️⃣ Selecione a seleção abaixo, cole o JSON e clique em Aplicar</div>
+      </div>
+    </div>
+
+    <label style="font-size:.75rem;color:var(--muted);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px">Qual seleção é essa página?</label>
+    <select class="scan-select" id="scan-selecao">
+      <option value="">— Selecione a seleção —</option>
+    </select>
+
+    <label style="font-size:.75rem;color:var(--muted);display:block;margin-bottom:6px;margin-top:10px;text-transform:uppercase;letter-spacing:.5px">Cole o JSON aqui</label>
+    <textarea id="scan-json" placeholder='{"coladas":[1,2,3,5,7],"vazias":[4,6,8,9,10,11,12,13,14,15,16,17,18,19,20]}' style="width:100%;min-height:90px;background:var(--card2);color:var(--texto);border:1px solid var(--borda);border-radius:8px;padding:10px;font-size:.75rem;font-family:monospace;resize:vertical;line-height:1.5" oninput="verificarJsonPronto()"></textarea>
+
+    <button class="scan-btn" id="scan-btn" onclick="aplicarJSON()" disabled style="margin-top:10px">✅ Aplicar ao álbum</button>
+    <div class="scan-status" id="scan-status"></div>
+    <div class="scan-resultado" id="scan-resultado"></div>
+  </div>
+  <div class="scan-card" style="margin-top:0">
+    <h3 style="font-size:.8rem;color:var(--muted)">💡 Dicas para a foto</h3>
+    <ul style="font-size:.75rem;color:var(--muted);line-height:2;padding-left:16px;margin-top:6px">
+      <li>Foto com boa iluminação, sem sombras</li>
+      <li>Página inteira visível na foto</li>
+      <li>Figurinhas coladas têm foto do jogador; vazias têm contorno em branco</li>
+    </ul>
+  </div>
+</div>
+<div id="tab-faltantes" class="content hidden">
+  <div id="faltantes-content"></div>
+  <button class="copy-btn" onclick="copiarFaltantes()">📋 Copiar lista de faltantes</button>
+</div>
+<div id="tab-opcoes" class="content hidden">
+  <div class="section-card" style="margin-top:4px">
+    <p style="font-size:.85rem;color:var(--muted);margin-bottom:12px">Dados salvos automaticamente no seu celular (localStorage).</p>
+    <button class="reset-btn" onclick="resetar()">🗑️ Zerar progresso</button>
+  </div>
+</div>
+<script>
+const GRUPOS = [
+  { letra:'A', selecoes:[
+    { id:'MEX', nome:'México', flag:'🇲🇽', jogadores:['Escudo','Luis Malagón','Johan Vásquez','Jorge Sánchez','César Montes','Jesús Gallardo','Israel Reyes','Diego Lainez','Carlos Rodríguez','Edson Álvarez','Orbelín Pineda','Marcel Ruiz','Érick Sánchez','Hirving Lozano','Santiago Giménez','Raúl Jiménez','Alexis Vega','Roberto Alvarado','César Huerta','Foto do time'] },
+    { id:'RSA', nome:'África do Sul', flag:'🇿🇦', jogadores:['Escudo','Ronwen Williams','Sipho Chaine','Aubrey Modiba','Samukele Kabini','Mbekezeli Mbokazi','Khulumani Ndamane','Siyabonga Ngezana','Khuliso Mudau','Nkosinathi Sibisi','Teboho Mokoena','Thalente Mbatha','Bathuisi Aubaas','Yaya Sithole','Sipho Mbule','Lyle Foster','Ioraam Rayners','Mohau Nkota','Oswin Appolis','Foto do time'] },
+    { id:'KOR', nome:'Coreia do Sul', flag:'🇰🇷', jogadores:['Escudo','Hyeon-woo Jo','Seung-Gyu Kim','Min-jae Kim','Yu-min Cho','Young-woo Seol','Han-beom Lee','Tae-seok Lee','Myung-jae Lee','Jae-sung Lee','In-beom Hwang','Kang-in Lee','Seung-ho Paik','Jens Castrop','Dong-gyeong Lee','Gue-sung Cho','Heung-min Son','Hee-chan Hwang','Hyeon-Gyu Oh','Foto do time'] },
+    { id:'CZE', nome:'Rep. Tcheca', flag:'🇨🇿', jogadores:['Escudo','Matěj Kovář','Jindřich Staněk','Ladislav Krejčí','Vladimír Coufal','Jaroslav Zelený','Tomáš Holeš','David Zima','Michal Sadílek','Lukáš Provod','Lukáš Červ','Tomáš Souček','Pavel Šulc','Matěj Vydra','Vasil Kušej','Tomáš Chorý','Václav Černý','Adam Hložek','Patrik Schick','Foto do time'] },
+  ]},
+  { letra:'B', selecoes:[
+    { id:'CAN', nome:'Canadá', flag:'🇨🇦', jogadores:['Escudo','Dayne St. Clair','Alphonso Davies','Alistair Johnston','Samuel Adekugbe','Richie Laryea','Derek Cornelius','Moïse Bombito','Kamal Miller','Stephen Eustáquio','Ismaël Koné','Jonathan Osorio','Jacob Shaffelburg','Mathieu Choinière','Niko Sigur','Tajon Buchanan','Liam Millar','Cyle Larin','Jonathan David','Foto do time'] },
+    { id:'QAT', nome:'Catar', flag:'🇶🇦', jogadores:['Escudo','Meshaal Barsham','Sultan Albrake','Lucas Mendes','Homam Ahmed','Boualem Khoukhi','Pedro Miguel','Tarek Salman','Mohamed Al-Mannai','Karim Boudiaf','Assim Madibo','Ahmed Fatehi','Mohammed Waad','Abdulaziz Hatem','Hassan Al-Haydos','Edmilson Junior','Akram Hassan Afif','Ahmed Al Ganehi','Almoez Ali','Foto do time'] },
+    { id:'SUI', nome:'Suíça', flag:'🇨🇭', jogadores:['Escudo','Gregor Kobel','Yvon Mvogo','Manuel Akanji','Ricardo Rodriguez','Nico Elvedi','Aurèle Amenda','Silvan Widmer','Granit Xhaka','Denis Zakaria','Remo Freuler','Fabian Rieder','Ardon Jashari','Johan Manzambi','Michel Aebischer','Breel Embolo','Ruben Vargas','Dan Ndoye','Zeki Amdouni','Foto do time'] },
+    { id:'BIH', nome:'Bósnia e Herz.', flag:'🇧🇦', jogadores:['Escudo','Nikola Vasilj','Amar Dedić','Sead Kolašinac','Tarik Muharemović','Nihad Mujakić','Nikola Katić','Amir Hadžiahmetović','Benjamin Tahirović','Armin Gigović','Ivan Šunjić','Ivan Bašić','Dženis Burnić','Esmir Bajraktarević','Amar Memić','Ermedin Demirović','Edin Džeko','Samed Baždar','Haris Tabaković','Foto do time'] },
+  ]},
+  { letra:'C', selecoes:[
+    { id:'BRA', nome:'Brasil', flag:'🇧🇷', jogadores:['Escudo','Alisson','Bento','Marquinhos','Éder Militão','Gabriel Magalhães','Danilo','Wesley','Lucas Paquetá','Casemiro','Bruno Guimarães','Luiz Henrique','Vinícius Júnior','Rodrygo','João Pedro','Matheus Cunha','Gabriel Martinelli','Raphinha','Estêvão','Foto do time'] },
+    { id:'MAR', nome:'Marrocos', flag:'🇲🇦', jogadores:['Escudo','Yassine Bounou','Munir El Kajoui','Achraf Hakimi','Noussair Mazraoui','Nayef Aguerd','Romain Saïss','Jawad El Yamiq','Adam Masina','Sofyan Amrabat','Azzedine Ounahi','Eliesse Ben Seghir','Bilal El Khannouss','Ismael Saibari','Youssef En-Nesyri','Abde Ezzalzouli','Soufiane Rahimi','Brahim Díaz','Ayoub El Kaabi','Foto do time'] },
+    { id:'HAI', nome:'Haiti', flag:'🇭🇹', jogadores:['Escudo','Johny Placide','Carlens Arcus','Martin Expérience','Jean-Kevin Duverne','Ricardo Adé','Duke Lacroix','Garven Metusala','Hannes Delcroix','Leverton Pierre','Danley Jean Jacques','Jean-Ricner Bellegarde','Christopher Attys','Derrick Etienne Jr.','Josué Casimir','Ruben Providence','Duckens Nazon','Louicius Deedson','Frantzdy Pierrot','Foto do time'] },
+    { id:'SCO', nome:'Escócia', flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿', jogadores:['Escudo','Angus Gunn','Jack Hendry','Kieran Tierney','Aaron Hickey','Andrew Robertson','Scott McKenna','John Souttar','Anthony Ralston','Grant Hanley','Scott McTominay','Billy Gilmour','Lewis Ferguson','Ryan Christie','Kenny McLean','John McGinn','Lyndon Dykes','Che Adams','Ben Doak','Foto do time'] },
+  ]},
+  { letra:'D', selecoes:[
+    { id:'USA', nome:'Estados Unidos', flag:'🇺🇸', jogadores:['Escudo','Math Freese','Chris Richards','Tim Ream','Mark McKenzie','Alex Freeman','Antonee Robinson','Tyler Adams','Tanner Tessmann','Weston McKennie','Christian Roldan','Timothy Weah','Diego Luna','Malik Tillman','Christian Pulisic','Brenden Aaronson','Ricardo Pepi','Haji Wright','Folarin Balogun','Foto do time'] },
+    { id:'PAR', nome:'Paraguai', flag:'🇵🇾', jogadores:['Escudo','Roberto Fernández','Orlando Gill','Gustavo Gómez','Fabián Balbuena','Juan José Cáceres','Omar Alderete','Junior Alonso','Mathías Villasanti','Diego Gómez','Damián Bobadilla','Andrés Cubas','Matías Galarza','Fonda Julio','Julio Enciso','Richard Sánchez','Ramón Sosa','Antonio Sanabria','Carlos González','Foto do time'] },
+    { id:'AUS', nome:'Austrália', flag:'🇦🇺', jogadores:['Escudo','Mathew Ryan','Joe Gauci','Harry Souttar','Alessandro Circati','Jordan Bos','Aziz Behich','Cameron Burgess','Lewis Miller','Milos Degenek','Jackson Irvine','Riley McGree','Aiden O\'Neill','Connor Metcalfe','Patrick Yazbek','Craig Goodwin','Kusini Yengi','Nestory Irankunda','Mohamed Touré','Foto do time'] },
+    { id:'TUR', nome:'Turquia', flag:'🇹🇷', jogadores:['Escudo','Ugurcan Cakir','Mert Muldur','Zeki Celik','Abdulkerim Bardakci','Caglar Soyuncu','Merih Demiral','Ferdi Kadioglu','Kaan Ayhan','Ismail Yuksek','Hakan Calhanoglu','Orkun Kokcu','Arda Güler','Irfan Can Kahveci','Yunus Akgun','Can Uzun','Baris Alper Yilmaz','Kerem Akturkoglu','Kenan Yildiz','Foto do time'] },
+  ]},
+  { letra:'E', selecoes:[
+    { id:'GER', nome:'Alemanha', flag:'🇩🇪', jogadores:['Escudo','Marc-André ter Stegen','Jonathan Tah','David Raum','Nico Schlotterbeck','Antonio Rüdiger','Waldemar Anton','Ridle Baku','Maximilian Mittelstädt','Joshua Kimmich','Florian Wirtz','Felix Nmecha','Leon Goretzka','Jamal Musiala','Serge Gnabry','Kai Havertz','Leroy Sané','Karim Adeyemi','Nick Woltemade','Foto do time'] },
+    { id:'CUR', nome:'Curaçao', flag:'🇨🇼', jogadores:['Escudo','Eloy Room','Armando Obispo','Sherel Floranus','Jurien Gaari','Joshua Brenet','Roshon Van Eijma','Shurandy Sambo','Livano Comenencia','Godfried Roemeratoe','Juninho Bacuna','Leandro Bacuna','Tahith Chong','Kenji Gorré','Jearl Margaritha','Jurgen Locadia','Jeremy Antonisse','Gervane Kastaneer','Sontje Hansen','Foto do time'] },
+    { id:'CIV', nome:'Costa do Marfim', flag:'🇨🇮', jogadores:['Escudo','Yahia Fofana','Ghislain Konan','Wilfried Singo','Odilon Kossounou','Evan Ndicka','Willy Boly','Emmanuel Agbadou','Ousmane Diomande','Franck Kessié','Seko Fofana','Ibrahim Sangaré','Jean-Philippe Gbamin','Amad Diallo','Sébastien Haller','Simon Adingra','Yan Diomande','Evann Guessand','Oumar Diakité','Foto do time'] },
+    { id:'ECU', nome:'Equador', flag:'🇪🇨', jogadores:['Escudo','Hernán Galíndez','Gonzalo Valle','Piero Hincapié','Pervis Estupiñán','Willian Pacho','Ángelo Preciado','Joel Ordóñez','Moisés Caicedo','Alan Franco','Kendry Páez','Pedro Vite','John Yeboah','Leonardo Campana','Gonzalo Plata','Nilson Angulo','Alan Minda','Kevin Rodríguez','Enner Valencia','Foto do time'] },
+  ]},
+  { letra:'F', selecoes:[
+    { id:'NED', nome:'Holanda', flag:'🇳🇱', jogadores:['Escudo','Bart Verbruggen','Virgil van Dijk','Micky van de Ven','Jurriën Timber','Denzel Dumfries','Nathan Aké','Jeremie Frimpong','Jan Paul van Hecke','Tijjani Reijnders','Ryan Gravenberch','Teun Koopmeiners','Frenkie de Jong','Xavi Simons','Justin Kluivert','Memphis Depay','Donyell Malen','Wout Weghorst','Cody Gakpo','Foto do time'] },
+    { id:'JAP', nome:'Japão', flag:'🇯🇵', jogadores:['Escudo','Zion Suzuki','H. Mochizuki','Ayumu Seko','Junnosuke Suzuki','Shogo Taniguchi','Tsuyoshi Watanabe','Kaishu Sano','Yuki Soma','Ao Tanaka','Daichi Kamada','Takefusa Kubo','Ritsu Doan','Keito Nakamura','Takumi Minamino','Shuto Machino','Junya Ito','Koki Ogawa','Ayase Ueda','Foto do time'] },
+    { id:'TUN', nome:'Tunísia', flag:'🇹🇳', jogadores:['Escudo','Bechir Ben Said','Aymen Dahmen','Van Valery','Montassar Talbi','Yassine Meriah','Ali Abdi','Dylan Bronn','Ellyes Skhiri','Aissa Laidouni','Ferjani Sassi','M.A. Ben Romdhane','Hannibal Mejbri','Elias Achouri','Elias Saad','Hazem Mastouri','Ismael Gharbi','Sayfallah Ltaief','Naim Sliti','Foto do time'] },
+    { id:'SWE', nome:'Suécia', flag:'🇸🇪', jogadores:['Escudo','Victor Johansson','Isak Hien','Gabriel Gudmundsson','Emil Holm','V. Nilsson Lindelöf','Gustaf Lagerbielke','Lucas Bergvall','Hugo Larsson','Jesper Karlström','Yasin Ayari','Mattias Svanberg','Daniel Svensson','Ken Sema','Roony Bardghji','Dejan Kulusevski','Anthony Elanga','Alexander Isak','Viktor Gyökeres','Foto do time'] },
+  ]},
+  { letra:'G', selecoes:[
+    { id:'BEL', nome:'Bélgica', flag:'🇧🇪', jogadores:['Escudo','Thibaut Courtois','Arthur Theate','Timothy Castagne','Zeno Debast','Brandon Mechele','Maxim De Cuyper','Thomas Meunier','Youri Tielemans','Amadou Onana','Nicolas Raskin','A. Saelemaekers','Hans Vanaken','Kevin De Bruyne','Jérémy Doku','Charles De Ketelaere','Leandro Trossard','Loïs Openda','Romelu Lukaku','Foto do time'] },
+    { id:'EGY', nome:'Egito', flag:'🇪🇬', jogadores:['Escudo','Mohamed El Shenawy','Mohamed Hany','Mohamed Hamdy','Yasser Ibrahim','Khaled Sobhi','Ramy Rabia','Hossam Abdelmaguid','Ahmed Fatouh','Marwan Attia','Zizo','Hamdy Fathy','Mohamed Lasheen','Emam Ashour','Osama Faisal','Mohamed Salah','Mostafa Mohamed','Trezeguet','Omar Marmoush','Foto do time'] },
+    { id:'IRN', nome:'Irã', flag:'🇮🇷', jogadores:['Escudo','Alireza Beiranvand','M. Pouraliganji','Ehsan Hajsafi','Milad Mohammadi','S. Khalilzadeh','Ramin Rezaeian','Hossein Kanaani','Sadegh Moharrami','Saleh Hardani','Saeed Ezatolahi','Saman Ghoddos','Omid Noorafkan','Roozbeh Cheshmi','Mohammad Mohebi','Sardar Azmoun','Mehdi Taremi','A. Jahanbakhsh','Ali Gholizadeh','Foto do time'] },
+    { id:'NZL', nome:'Nova Zelândia', flag:'🇳🇿', jogadores:['Escudo','Max Crocombe-Payne','Alex Paulsen','Michael Boxall','Liberato Cacace','Tim Payne','Tyler Bindon','Francis de Vries','Finn Surman','Joe Bell','Sarpreet Singh','Ryan Thomas','Matthew Garbett','Marko Stamenić','Ben Old','Chris Wood','Elijah Just','Callum McCowatt','Kosta Barbarouses','Foto do time'] },
+  ]},
+  { letra:'H', selecoes:[
+    { id:'ESP', nome:'Espanha', flag:'🇪🇸', jogadores:['Escudo','Unai Simón','Robin Le Normand','Aymeric Laporte','Dean Huijsen','Pedro Porro','Dani Carvajal','Marc Cucurella','Martín Zubimendi','Rodri','Pedri','Fabián Ruiz','Mikel Merino','Lamine Yamal','Dani Olmo','Nico Williams','Ferran Torres','Álvaro Morata','Mikel Oyarzabal','Foto do time'] },
+    { id:'CPV', nome:'Cabo Verde', flag:'🇨🇻', jogadores:['Escudo','Vozinha','Logan Costa','Pico','Diney','Steven Moreira','Wagner Pina','João Paulo','Yannick Semedo','Kevin Pina','Patrick Andrade','Jamiro Monteiro','Deroy Duarte','Garry Rodrigues','Jovane Cabral','Ryan Mendes','Dailon Livramento','Willy Semedo','Bebé','Foto do time'] },
+    { id:'KSA', nome:'Arábia Saudita', flag:'🇸🇦', jogadores:['Escudo','Nawaf Alaqidi','A. Al-Sanbi','Saud Abdulhamid','Nawaf Boushal','Jihad Thakri','Moteb Al-Harbi','Hassan Altambakti','Musab Aljuwayr','Ziyad Aljohani','A. Alkhaibari','Nasser Aldawsari','S. Abu Alshamat','Marwan Alsahafi','Salem Aldawsari','A. Al-Aboud','Feras Albrikan','Saleh Alshehri','A. Al-Hamdan','Foto do time'] },
+    { id:'URU', nome:'Uruguai', flag:'🇺🇾', jogadores:['Escudo','Sergio Rochet','Santiago Mele','Ronald Araujo','J.M. Giménez','Sebastian Caceres','Mathias Olivera','Guillermo Varela','Nahitan Nandez','Federico Valverde','G. De Arrascaeta','Rodrigo Bentancur','Manuel Ugarte','Nicolás de la Cruz','Maxi Araujo','Darwin Núñez','Federico Viñas','Rodrigo Aguirre','Facundo Pellistri','Foto do time'] },
+  ]},
+  { letra:'I', selecoes:[
+    { id:'FRA', nome:'França', flag:'🇫🇷', jogadores:['Escudo','Mike Maignan','Theo Hernández','William Saliba','Jules Koundé','Ibrahima Konaté','Dayot Upamecano','Lucas Digne','A. Tchouaméni','Eduardo Camavinga','Manu Koné','Adrien Rabiot','Michael Olise','Ousmane Dembélé','Bradley Barcola','Désiré Doué','Kingsley Coman','Hugo Ekitike','Kylian Mbappé','Foto do time'] },
+    { id:'SEN', nome:'Senegal', flag:'🇸🇳', jogadores:['Escudo','Eduardo Mendy','Yehvann Diouf','Moussa Niakhaté','Abdoulaye Seck','Ismail Jakobs','El Hadji M. Diouf','Kalidou Koulibaly','Idrissa G. Gueye','Pape Matar Sarr','Pape Gueye','Habib Diarra','Lamine Camara','Sadio Mané','Ismaïla Sarr','Boulaye Dia','Iliman Ndiaye','Nicolas Jackson','Krepin Diatta','Foto do time'] },
+    { id:'IRQ', nome:'Iraque', flag:'🇮🇶', jogadores:['Escudo','Jalal Hassan','Rebin Sulaka','Hussein Ali','Akam Hashem','Merchas Doski','Zaid Tahseen','Manaf Younis','Zidane Iqbal','Amir Al-Ammari','Ibrahim Bayesh','Ali Jasim','Youssef Amyn','Aimar Sher','Marko Farji','Osama Rashid','Ali Al-Hamadi','Aymen Hussein','Mohanad Ali','Foto do time'] },
+    { id:'NOR', nome:'Noruega', flag:'🇳🇴', jogadores:['Escudo','Ørjan Nyland','Julian Ryerson','Leo Østigård','Kristoffer Ajer','M.H. Pedersen','David M. Wolfe','Torbjørn Heggem','Morten Thorsby','Martin Ødegaard','Sander Berge','A. Schjelderup','Patrick Berg','Erling Haaland','Alexander Sørloth','Aron Dønnum','J.S. Larsen','Antonio Nusa','Oscar Bobb','Foto do time'] },
+  ]},
+  { letra:'J', selecoes:[
+    { id:'ARG', nome:'Argentina', flag:'🇦🇷', jogadores:['Escudo','Emiliano Martínez','Nahuel Molina','Cristian Romero','Nicolás Otamendi','N. Tagliafico','Leonardo Balerdi','Enzo Fernández','Alexis Mac Allister','Rodrigo De Paul','Exequiel Palacios','Leandro Paredes','Nico Paz','F. Mastantuono','Nico González','Lionel Messi','Lautaro Martínez','Julián Álvarez','Paulo Dybala','Foto do time'] },
+    { id:'ALG', nome:'Argélia', flag:'🇩🇿', jogadores:['Escudo','Raïs M\'Bolhi','Alexandre Oukidja','Ramy Bensebaïni','Saïd Benrahma','Aïssa Mandi','Youcef Atal','Djamel Benlamri','Ryad Mahrez','Sofiane Feghouli','Haris Belkebla','Yacine Brahimi','Nabil Bentaleb','Islam Slimani','Youcef Belaïli','Billal Brahimi','Andy Delort','Baghdad Bounedjah','Farès Chaïbi','Foto do time'] },
+    { id:'AUT', nome:'Áustria', flag:'🇦🇹', jogadores:['Escudo','Patrick Pentz','Heinz Lindner','Philipp Lienhart','David Alaba','Maximilian Wöber','Stefan Posch','Philipp Mwene','Xaver Schlager','Konrad Laimer','Marcel Sabitzer','Nicolas Seiwald','Patrick Wimmer','Christoph Baumgartner','Romano Schmid','Michael Gregoritsch','Marko Arnautovic','Florian Grillitsch','Andreas Weimann','Foto do time'] },
+    { id:'JOR', nome:'Jordânia', flag:'🇯🇴', jogadores:['Escudo','Yazeed Abdelhamid','Ibrahim Khader','Ahmad Saleh','Baha Faisal','Yazan Naimat','Hani Abu Rashid','Osama Rashid','Ali Olwan','Baha Faisal','Ahmad Abu Eid','Musa Al-Tamari','Hamza Barry','Mohammad Saleh','Noor Al-Rawabdeh','Ahmad Zyoud','Fares Shafiei','Rami Hamada','Omar Al-Somah','Foto do time'] },
+  ]},
+  { letra:'K', selecoes:[
+    { id:'POR', nome:'Portugal', flag:'🇵🇹', jogadores:['Escudo','Diogo Costa','José Sá','Rúben Dias','Pepe','Nuno Mendes','João Cancelo','Danilo Pereira','Bernardo Silva','Bruno Fernandes','Vitinha','João Neves','Rúben Neves','Rafael Leão','Pedro Neto','Diogo Jota','André Silva','Gonçalo Ramos','Cristiano Ronaldo','Foto do time'] },
+    { id:'COL', nome:'Colômbia', flag:'🇨🇴', jogadores:['Escudo','Camilo Vargas','David Ospina','Dávinson Sánchez','Yerry Mina','Stefan Medina','Daniel Muñoz','Johan Mojica','Wilmar Barrios','Matheus Uribe','Juan Quintero','James Rodríguez','Luis Díaz','Jhon Durán','Falcao García','Cuadrado','Lerma','Cardona','Borja','Foto do time'] },
+    { id:'UZB', nome:'Uzbequistão', flag:'🇺🇿', jogadores:['Escudo','Abduvohid Nishonov','Oybek Khoshimov','Khurshid Tursunov','Shamsiddin Latipov','Eldor Shomurodov','Jakhongir Sidiqov','Bobur Abdixoliqov','Khojiakbar Alijonov','Otabek Shukurov','Islom Tukhtahujaev','Djaloliddin Masharipov','Husan Hasanov','Dilshod Vahobov','Ulugbek Khashimov','Dostonbek Khamdamov','Egamberdi Qodirov','Sanjar Tursunov','Jasur Yaxshiliqov','Foto do time'] },
+    { id:'COD', nome:'RD Congo', flag:'🇨🇩', jogadores:['Escudo','Joël Kiassumbua','Elia Meschak','Marcel Tisserand','Chancel Mbemba','Arthur Masuaku','Silas Katompa','Théo Bongonda','Cédric Bakambu','Yoane Mwepu','Gaël Kakuta','Jonathan Bolingi','Samuel Bastien','Dylan Batubinsika','Hérita Ilunga','Mehdi Benali','Firmin Mubele','Jordan Ikoko','Déni Kipre','Foto do time'] },
+  ]},
+  { letra:'L', selecoes:[
+    { id:'ENG', nome:'Inglaterra', flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', jogadores:['Escudo','Jordan Pickford','Aaron Ramsdale','Kyle Walker','John Stones','Harry Maguire','Luke Shaw','Trent Alexander-Arnold','Declan Rice','Jude Bellingham','Phil Foden','Bukayo Saka','Marcus Rashford','Raheem Sterling','Harry Kane','Ivan Toney','Jack Grealish','Cole Palmer','Kobbie Mainoo','Foto do time'] },
+    { id:'CRO', nome:'Croácia', flag:'🇭🇷', jogadores:['Escudo','Dominik Livaković','Ivica Ivušić','Josip Šutalo','Joško Gvardiol','Borna Sosa','Domagoj Vida','Šime Vrsaljko','Lovro Majer','Luka Modrić','Mateo Kovačić','Marcelo Brozović','Mario Pašalić','Ivan Perišić','Mislav Oršić','Andrej Kramarić','Bruno Petković','Marko Livaja','Ante Budimir','Foto do time'] },
+    { id:'GHA', nome:'Gana', flag:'🇬🇭', jogadores:['Escudo','Lawrence Ati-Zigi','Abdul Manaf Nurudeen','Mohammed Salisu','Daniel Amartey','Denis Odoi','Alexander Djiku','Tariqe Fosu','Thomas Partey','Mohammed Kudus','Ernest Nuamah','Antoine Semenyo','Jordan Ayew','André Ayew','Inaki Williams','Felix Afena-Gyan','Osman Bukari','Richmond Boakye','Elisha Owusu','Foto do time'] },
+    { id:'PAN', nome:'Panamá', flag:'🇵🇦', jogadores:['Escudo','Luis Mejía','Orlando Mosquera','Harold Cummings','Fidel Escobar','Eric Davis','Andrés Andrade','Adalberto Carrasquilla','Alberto Quintero','Édgar Bárcenas','Jovani Welch','Cecilio Waterman','José Fajardo','Ricardo Avila','Rolando Blackburn','Miguel Camargo','Maximiliano Urruti','Gabriel Torres','Ismael Díaz','Foto do time'] },
+  ]},
+];
+
+const SELECOES = GRUPOS.flatMap(g => g.selecoes);
+const TOTAL = 980;
+
+const ESPECIAIS = [
+  {id:'SOMOS26',nome:'SOMOS 26',icon:'🌎'},{id:'FWC1',nome:'Troféu FIFA',icon:'🏆'},
+  {id:'FWC2',nome:'Bola Trionda',icon:'⚽'},{id:'FWC3',nome:'Logo Copa',icon:'🎖️'},
+  {id:'FWC4',nome:'Maple (mascote)',icon:'🍁'},{id:'FWC5',nome:'Zayu (mascote)',icon:'🦅'},
+  {id:'FWC6',nome:'Clutch (mascote)',icon:'🐻'},{id:'FWC7',nome:'País-sede USA',icon:'🇺🇸'},
+  {id:'FWC8',nome:'País-sede MEX',icon:'🇲🇽'},{id:'FWC9',nome:'País-sede CAN',icon:'🇨🇦'},
+  {id:'FWC10',nome:'Sede: Dallas',icon:'🏟️'},{id:'FWC11',nome:'Sede: LA',icon:'🏟️'},
+  {id:'FWC12',nome:'Sede: NYC',icon:'🏟️'},{id:'FWC13',nome:'Sede: Miami',icon:'🏟️'},
+  {id:'FWC14',nome:'Sede: Seattle',icon:'🏟️'},{id:'FWC15',nome:'Sede: SF',icon:'🏟️'},
+  {id:'FWC16',nome:'Sede: Boston',icon:'🏟️'},{id:'FWC17',nome:'Sede: Atlanta',icon:'🏟️'},
+  {id:'FWC18',nome:'Sede: Azteca',icon:'🏟️'},{id:'FWC19',nome:'Sede: Monterrey',icon:'🏟️'},
+  {id:'MUS1',nome:'Copa 1930',icon:'📖'},{id:'MUS2',nome:'Copa 1950',icon:'📖'},
+  {id:'MUS3',nome:'Copa 1958',icon:'📖'},{id:'MUS4',nome:'Copa 1966',icon:'📖'},
+  {id:'MUS5',nome:'Copa 1970',icon:'📖'},{id:'MUS6',nome:'Copa 1982',icon:'📖'},
+  {id:'MUS7',nome:'Copa 1994',icon:'📖'},{id:'MUS8',nome:'Copa 2002',icon:'📖'},
+  {id:'MUS9',nome:'Copa 2006',icon:'📖'},{id:'MUS10',nome:'Copa 2014',icon:'📖'},
+  {id:'MUS11',nome:'Copa 2022',icon:'📖'},
+];
+
+// ============================================================
+// ESTADO
+// ============================================================
+let estado={};
+function loadEstado(){try{const s=localStorage.getItem('copa2026v3');if(s)estado=JSON.parse(s);}catch(e){estado={};}}
+function saveEstado(){localStorage.setItem('copa2026v3',JSON.stringify(estado));}
+function gk(sid,pos){return sid+'_'+pos;}
+function gs(key){return estado[key]||0;}
+function toggle(key){estado[key]=(gs(key)+1)%3;saveEstado();}
+
+function calcStats(){
+  let c=0,r=0;
+  SELECOES.forEach(s=>{for(let i=1;i<=20;i++){const st=gs(gk(s.id,i));if(st===1)c++;if(st===2){c++;r++;}}});
+  ESPECIAIS.slice(0,20).forEach(e=>{const st=gs(e.id);if(st===1)c++;if(st===2){c++;r++;}});
+  return{coladas:c,repetidas:r};
+}
+function calcSecao(sid){let c=0;for(let i=1;i<=20;i++){if(gs(gk(sid,i))>=1)c++;}return c;}
+function calcGrupo(g){let t=0;g.selecoes.forEach(s=>{t+=calcSecao(s.id);});return{coladas:t,total:g.selecoes.length*20};}
+
+function updateGlobal(){
+  const{coladas,repetidas}=calcStats();
+  const pct=Math.round((coladas/TOTAL)*100);
+  document.getElementById('pct-global').textContent=pct+'%';
+  document.getElementById('count-coladas').textContent=coladas+' / '+TOTAL;
+  document.getElementById('count-repetidas').textContent=repetidas;
+  document.getElementById('bar-global').style.width=pct+'%';
+}
+
+// ============================================================
+// RENDER SELEÇÕES
+// ============================================================
+function renderSelecoes(){
+  const container=document.getElementById('tab-selecoes');
+  container.innerHTML='';
+  GRUPOS.forEach(grupo=>{
+    const{coladas,total}=calcGrupo(grupo);
+    const gpct=Math.round((coladas/total)*100);
+    const block=document.createElement('div');
+    block.className='group-block';
+    block.innerHTML='<div class="group-label"><span class="group-letter">GRUPO '+grupo.letra+'</span><span class="group-title" id="gtitle-'+grupo.letra+'">'+coladas+'/'+total+' figurinhas</span><span class="group-pct" id="gpct-'+grupo.letra+'">'+gpct+'%</span></div>';
+    grupo.selecoes.forEach(sel=>{
+      const col=calcSecao(sel.id);
+      const pct=Math.round((col/20)*100);
+      const card=document.createElement('div');
+      card.className='section-card';card.id='sec-'+sel.id;
+      let stks=sel.jogadores.map((nome,i)=>{
+        const pos=i+1;const key=gk(sel.id,pos);const st=gs(key);
+        const cls=st===1?'colada':st===2?'repetida':'';
+        const sid2=sel.id;const gl2=grupo.letra;
+        return `<div class="sticker ${cls}" id="stk-${key}" onclick="tapSticker('${key}','${sid2}','${gl2}')"><div class="topo"><div class="num">${pos}</div><div class="nome">${nome}</div></div><div class="icon"></div></div>`;
+      }).join('');
+      const sid=sel.id;const sflag=sel.flag;const snome=sel.nome;
+      card.innerHTML=`<div class="section-header" onclick="toggleGrid('${sid}')"><span class="section-flag">${sflag}</span><div><div class="section-name">${snome}</div><div class="sec-sub" style="font-size:.7rem;color:var(--muted)">${col}/20</div></div><div class="section-pct" id="pct-${sid}">${pct}%</div></div><div class="section-mini-bar"><div class="section-mini-fill" id="fill-${sid}" style="width:${pct}%"></div></div><div class="stickers-grid hidden" id="grid-${sid}">${stks}</div>`;
+
+      // Botão scan rápido dentro do card da seleção
+      const scanBtnEl = document.createElement('button');
+      scanBtnEl.style.cssText='width:100%;margin-top:10px;padding:8px;background:var(--card2);color:var(--texto);border:1px solid var(--borda);border-radius:8px;font-size:.75rem;cursor:pointer;display:none;';
+      scanBtnEl.id='quick-scan-'+sel.id;
+      scanBtnEl.textContent='📷 Escanear página com IA';
+      scanBtnEl.onclick=()=>abrirScanPara(sel.id);
+      card.appendChild(scanBtnEl);
+
+      block.appendChild(card);
+    });
+    container.appendChild(block);
+  });
+}
+
+function toggleGrid(sid){
+  const grid=document.getElementById('grid-'+sid);
+  grid.classList.toggle('hidden');
+  const btn=document.getElementById('quick-scan-'+sid);
+  if(btn) btn.style.display=grid.classList.contains('hidden')?'none':'block';
+}
+
+function tapSticker(key,sid,gletra){
+  toggle(key);
+  const el=document.getElementById('stk-'+key);const st=gs(key);
+  el.className='sticker'+(st===1?' colada':st===2?' repetida':'');
+  const col=calcSecao(sid);const pct=Math.round((col/20)*100);
+  document.getElementById('pct-'+sid).textContent=pct+'%';
+  document.getElementById('fill-'+sid).style.width=pct+'%';
+  document.getElementById('sec-'+sid).querySelector('.sec-sub').textContent=col+'/20';
+  const grupo=GRUPOS.find(g=>g.letra===gletra);
+  if(grupo){const{coladas:gc,total:gt}=calcGrupo(grupo);const gpct=Math.round((gc/gt)*100);
+    document.getElementById('gpct-'+gletra).textContent=gpct+'%';
+    document.getElementById('gtitle-'+gletra).textContent=gc+'/'+gt+' figurinhas';}
+  updateGlobal();
+}
+
+// ============================================================
+// ESPECIAIS
+// ============================================================
+function renderEspeciais(){
+  const container=document.getElementById('tab-especiais');
+  const pCol=ESPECIAIS.filter(e=>gs(e.id)>=1).length;
+  const pct=Math.round((pCol/ESPECIAIS.length)*100);
+  container.innerHTML='<div class="section-card" style="margin-bottom:12px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span style="font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Figurinhas Especiais</span><span style="font-family:Bebas Neue,sans-serif;font-size:1.4rem;color:var(--amarelo)" id="pct-esp">'+pct+'%</span></div><div class="progress-track"><div class="progress-fill" id="fill-esp" style="width:'+pct+'%"></div></div><div style="font-size:.72rem;color:var(--muted);margin-top:6px" id="count-esp">'+pCol+'/'+ESPECIAIS.length+'</div></div>'
+    +'<div class="special-grid">'+ESPECIAIS.map(e=>{const st=gs(e.id);const eid=e.id;return`<div class="special-sticker ${st>=1?'colada':''}" id="esp-${eid}" onclick="tapEspecial('${eid}')"><div class="s-num">${eid}</div><div class="s-icon">${e.icon}</div><div class="s-nome">${e.nome}</div></div>`;}).join('')+'</div>';
+}
+function tapEspecial(eid){toggle(eid);const st=gs(eid);document.getElementById('esp-'+eid).className='special-sticker'+(st>=1?' colada':'');
+  const pCol=ESPECIAIS.filter(e=>gs(e.id)>=1).length;const pct=Math.round((pCol/ESPECIAIS.length)*100);
+  document.getElementById('pct-esp').textContent=pct+'%';document.getElementById('fill-esp').style.width=pct+'%';
+  document.getElementById('count-esp').textContent=pCol+'/'+ESPECIAIS.length;updateGlobal();}
+
+// ============================================================
+// SCAN IA
+// ============================================================
+function popularSelectScan(){
+  const sel=document.getElementById('scan-selecao');
+  GRUPOS.forEach(g=>{
+    const optGrp=document.createElement('optgroup');
+    optGrp.label='Grupo '+g.letra;
+    g.selecoes.forEach(s=>{
+      const opt=document.createElement('option');
+      opt.value=s.id;
+      opt.textContent=s.flag+' '+s.nome;
+      optGrp.appendChild(opt);
+    });
+    sel.appendChild(optGrp);
+  });
+  sel.addEventListener('change',verificarJsonPronto);
+}
+
+function abrirScanPara(sid){
+  showTab('scan');
+  document.getElementById('scan-selecao').value=sid;
+  verificarJsonPronto();
+}
+
+function verificarJsonPronto(){
+  const sel=document.getElementById('scan-selecao').value;
+  const json=document.getElementById('scan-json').value.trim();
+  document.getElementById('scan-btn').disabled=!(sel&&json);
+}
+
+function aplicarJSON(){
+  const sid=document.getElementById('scan-selecao').value;
+  const jsonTxt=document.getElementById('scan-json').value.trim();
+  const status=document.getElementById('scan-status');
+  const resultDiv=document.getElementById('scan-resultado');
+  if(!sid||!jsonTxt)return;
+
+  let resultado;
+  try{
+    const match=jsonTxt.match(/\{[\s\S]*\}/);
+    if(!match)throw new Error('JSON não encontrado');
+    resultado=JSON.parse(match[0]);
+    if(!Array.isArray(resultado.coladas))throw new Error('Campo "coladas" não encontrado');
+  }catch(err){
+    status.className='scan-status erro';
+    status.textContent='❌ JSON inválido: '+err.message+'. Copie exatamente o que o Claude respondeu.';
+    return;
+  }
+
+  const gletra=GRUPOS.find(g=>g.selecoes.some(s=>s.id===sid))?.letra;
+  resultado.coladas.forEach(pos=>{
+    const key=gk(sid,pos);
+    if(gs(key)===0)estado[key]=1;
+  });
+  saveEstado();
+
+  const selObj=SELECOES.find(s=>s.id===sid);
+  if(selObj){
+    selObj.jogadores.forEach((_,i)=>{
+      const pos=i+1;const key=gk(sid,pos);const st=gs(key);
+      const el=document.getElementById('stk-'+key);
+      if(el)el.className='sticker'+(st===1?' colada':st===2?' repetida':'');
+    });
+    const col=calcSecao(sid);const pct=Math.round((col/20)*100);
+    const pEl=document.getElementById('pct-'+sid);if(pEl)pEl.textContent=pct+'%';
+    const fEl=document.getElementById('fill-'+sid);if(fEl)fEl.style.width=pct+'%';
+    const sEl=document.querySelector('#sec-'+sid+' .sec-sub');if(sEl)sEl.textContent=col+'/20';
+  }
+  if(gletra){
+    const grupo=GRUPOS.find(g=>g.letra===gletra);
+    if(grupo){const{coladas:gc,total:gt}=calcGrupo(grupo);
+      const gEl=document.getElementById('gpct-'+gletra);if(gEl)gEl.textContent=Math.round((gc/gt)*100)+'%';
+      const gtEl=document.getElementById('gtitle-'+gletra);if(gtEl)gtEl.textContent=gc+'/'+gt+' figurinhas';}
+  }
+  updateGlobal();
+
+  // Mostra resultado
+  let html='<div style="font-size:.75rem;font-weight:700;margin-bottom:8px;color:var(--verde)">🎉 '+resultado.coladas.length+' figurinhas marcadas como coladas!</div>';
+  if(selObj){
+    selObj.jogadores.forEach((nome,i)=>{
+      const pos=i+1;
+      const colada=resultado.coladas.includes(pos);
+      html+='<div class="linha"><span style="min-width:22px;font-weight:700;color:var(--muted);font-size:.7rem">'+pos+'</span><span style="flex:1;font-size:.75rem">'+nome+'</span>'+(colada?'<span class="badge-col">✅</span>':'<span class="badge-falt">⬜</span>')+'</div>';
+    });
+  }
+  resultDiv.innerHTML=html;
+  status.className='scan-status done';
+  status.textContent='✅ Aplicado com sucesso! Veja em Grupos.';
+  document.getElementById('scan-json').value='';
+  document.getElementById('scan-btn').disabled=true;
+}
+
+// ============================================================
+// FALTANTES
+// ============================================================
+function renderFaltantes(){
+  const container=document.getElementById('faltantes-content');container.innerHTML='';
+  GRUPOS.forEach(grupo=>{
+    let linhas='';
+    grupo.selecoes.forEach(sel=>{
+      const faltam=[];for(let i=1;i<=20;i++){if(gs(gk(sel.id,i))===0)faltam.push(i);}
+      if(!faltam.length)return;
+      const nomes=faltam.map(n=>n+':'+sel.jogadores[n-1]);
+      linhas+='<div class="missing-section"><div class="missing-title">'+sel.flag+' '+sel.nome+' ('+faltam.length+')</div><div class="missing-chips">'+nomes.map(n=>'<span class="chip">'+n+'</span>').join('')+'</div></div>';
+    });
+    if(linhas){const div=document.createElement('div');div.innerHTML='<div style="font-family:Bebas Neue,sans-serif;font-size:1rem;color:var(--amarelo);margin:12px 0 6px;letter-spacing:2px">GRUPO '+grupo.letra+'</div>'+linhas;container.appendChild(div);}
+  });
+  const espFaltam=ESPECIAIS.filter(e=>gs(e.id)===0);
+  if(espFaltam.length){const div=document.createElement('div');div.innerHTML='<div style="font-family:Bebas Neue,sans-serif;font-size:1rem;color:var(--amarelo);margin:12px 0 6px;letter-spacing:2px">⭐ ESPECIAIS</div><div class="missing-chips">'+espFaltam.map(e=>'<span class="chip">'+e.id+'</span>').join('')+'</div>';container.appendChild(div);}
+  if(!container.innerHTML)container.innerHTML='<div style="text-align:center;padding:40px;color:var(--verde)"><div style="font-size:3rem">🏆</div><div style="font-family:Bebas Neue,sans-serif;font-size:1.5rem;margin-top:8px">Álbum Completo!</div></div>';
+}
+
+function copiarFaltantes(){
+  let txt='📋 FALTANTES - COPA 2026\n\n';
+  GRUPOS.forEach(g=>{let l='';g.selecoes.forEach(sel=>{const f=[];for(let i=1;i<=20;i++){if(gs(gk(sel.id,i))===0)f.push(i);}if(f.length)l+='  '+sel.flag+' '+sel.nome+': '+f.map(n=>n+':'+sel.jogadores[n-1]).join(' | ')+'\n';});if(l)txt+='GRUPO '+g.letra+'\n'+l+'\n';});
+  const ef=ESPECIAIS.filter(e=>gs(e.id)===0).map(e=>e.id);if(ef.length)txt+='⭐ Especiais: '+ef.join(', ');
+  navigator.clipboard.writeText(txt).then(()=>{const btn=document.querySelector('.copy-btn');btn.textContent='✅ Copiado!';setTimeout(()=>btn.textContent='📋 Copiar lista de faltantes',2000);});
+}
+
+function showTab(name){
+  ['selecoes','especiais','scan','faltantes','opcoes'].forEach(t=>document.getElementById('tab-'+t).classList.add('hidden'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.remove('hidden');
+  const idx=['selecoes','especiais','scan','faltantes','opcoes'].indexOf(name);
+  document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+  if(name==='faltantes')renderFaltantes();
+  if(name==='especiais')renderEspeciais();
+}
+
+function resetar(){if(confirm('Zerar todo o progresso?')){estado={};saveEstado();location.reload();}}
+
+loadEstado();renderSelecoes();renderEspeciais();popularSelectScan();updateGlobal();
+</script>
+</body>
+</html>
